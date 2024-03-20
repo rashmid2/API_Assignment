@@ -1,0 +1,1729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="468af2bf-b076-4606-be8c-a13e5b4682d5" created="3.51.0" activeEnvironment="Default environment" encryptionMode="Not encrypted" name="Student details" resourceRoot="" projectVersion="" updated="3.51.0 2024-02-14T12:23:34Z" defaultScriptLanguage="Groovy" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" id="600e8598-f55b-4fbc-bf71-ba9542f715a7" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://thetestingworldapi.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings id="bf054888-f23e-4f09-a40e-170bf191f7b8"/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+    </con:endpoints>
+    <con:resource name="StudentsDetails" path="/api/studentsDetails" id="d72301e3-fbb1-4830-8f22-ecb9a9c8302e">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="StudentsDetails" id="5bac8228-192e-45f3-a14a-aa9c30a997bc" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="a65aeef6-d1ff-4219-a8ac-a1a18feaaeba" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+      <con:method name="StudentsDetails 2" id="5c853680-1b32-4145-b723-a8c83009d789" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>500 400</con:status>
+          <con:params/>
+          <con:element xmlns:stud="https://thetestingworldapi.com/api/studentsDetails">stud:Fault</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>201</con:status>
+          <con:params/>
+          <con:element xmlns:stud="https://thetestingworldapi.com/api/studentsDetails">stud:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="362fbf2e-f66c-4a2a-8e4d-5fd44385c15a" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+      <con:method name="StudentsDetails 3" id="2e6dfcae-6f84-45bc-862e-45940b464976" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="f35c7114-5b81-41df-a1a4-6804333a257c" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="Id" path="/api/studentsDetails/{id}" id="29fd5a07-ba30-446c-8d42-50d83b13311c">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Id" id="960c654a-534f-4bbd-a145-145eaf5943f7" method="GET">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>id</con:name>
+            <con:value>id</con:value>
+            <con:style>TEMPLATE</con:style>
+            <con:default>id</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+          <con:element xmlns:id="https://thetestingworldapi.com/api/studentsDetails/id">id:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:id="https://thetestingworldapi.com/api/studentsDetails/id">id:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="b0bd9156-da02-4339-b734-67d4d9c3db28" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="id" value="id"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>id</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+      <con:method name="Id 2" id="2d7edfd4-1784-4b6b-903c-59daaa666224" method="PUT">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>id</con:name>
+            <con:value>id</con:value>
+            <con:style>TEMPLATE</con:style>
+            <con:default>id</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>400 405</con:status>
+          <con:params/>
+          <con:element xmlns:id="https://thetestingworldapi.com/api/studentsDetails/id">id:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:id="https://thetestingworldapi.com/api/studentsDetails/id">id:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="56ca59a0-a172-4bc2-b86f-b4982194ae29" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="id" value="id"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>id</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+      <con:method name="Id 3" id="89ba6671-6f23-4da0-9335-428f5e02a44f" method="DELETE">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>id</con:name>
+            <con:value>id</con:value>
+            <con:style>TEMPLATE</con:style>
+            <con:default>id</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:ns="https://thetestingworldapi.com/api/studentsDetails/10094515">ns:Response</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>405</con:status>
+          <con:params/>
+          <con:element xmlns:ns="https://thetestingworldapi.com/api/studentsDetails/10094515">ns:Fault</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="b1eabe97-7ea3-436b-96d0-45739af99565" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="id" value="id"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>id</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="Id 1" path="/api/technicalskills/{id}" id="cdab9309-e56d-43bc-bdee-6c922322150f">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Id 1" id="8c07e762-106a-40d3-87b8-834fbe211b96" method="GET">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>id</con:name>
+            <con:value>id</con:value>
+            <con:style>TEMPLATE</con:style>
+            <con:default>id</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:request name="Request 1" id="f190d5c0-ca70-464d-bf12-6e0da5e5c41c" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+          <con:parameters>
+            <con:entry key="id" value="id"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>id</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+      <con:method name="Id 1 2" id="0c513611-8033-4dac-a2a6-a32a98876e2a" method="GET">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>id</con:name>
+            <con:value>id</con:value>
+            <con:style>TEMPLATE</con:style>
+            <con:default>id</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+          <con:element xmlns:id="https://thetestingworldapi.com/api/technicalskills/id">id:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:id="https://thetestingworldapi.com/api/technicalskills/id">id:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="e7d36533-b246-46d1-902d-9aaf6c303d36" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+          <con:parameters>
+            <con:entry key="id" value="id"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>id</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="Technicalskills" path="/api/technicalskills" id="29910ede-27f4-4f24-94af-dad67b0a96ca">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Technicalskills" id="5505aeb0-2d20-4503-bc29-b0afc4f4641d" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:tec="https://thetestingworldapi.com/api/technicalskills">tec:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="9f102a78-10e7-4d84-91ad-ff91bb647950" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+      <con:method name="Technicalskills 2" id="d4a80126-214e-4748-95c4-48041489217e" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:tec="https://thetestingworldapi.com/api/technicalskills">tec:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="4f8a6c17-91dc-4e1d-ae70-95411264f2e5" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="3e7a9827-443f-4882-82c9-1d35be47551a" name="Technical skills" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings id="ae3181a5-6eba-4261-aed1-a3059a40397e"/>
+    <con:definitionCache type="TEXT" rootPart="Technical skills.json">
+      <con:part>
+        <con:url>Technical skills.json</con:url>
+        <con:content>{"openapi":"3.0.1","info":{"title":"Technical skills","description":"","version":"1.0.0"},"servers":[],"paths":{},"components":{"securitySchemes":{"Fecth data Oath":{"type":"http","scheme":"basic"},"Common Auth":{"type":"http","scheme":"basic"},"Bearer":{"type":"oauth2","flows":{}}}}}</con:content>
+        <con:type>https://swagger.io/openapiv3/specification</con:type>
+      </con:part>
+    </con:definitionCache>
+    <con:endpoints>
+      <con:endpoint>https://thetestingworldapi.com/api/technicalskills</con:endpoint>
+      <con:endpoint>https://thetestingworldapi.com/api/technicalskills/{id}</con:endpoint>
+    </con:endpoints>
+  </con:interface>
+  <con:testSuite id="ed44bfbf-1c89-4ef3-9311-e4afca121447" name="E2E student details flow">
+    <con:settings id="8485106d-7d00-4c01-86ea-07936578ebaa"/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="5d6abb28-34c2-41d3-95e0-f1ec646a81de" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Add student POST" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:testStep type="groovy" name="Groovy Script" id="f9e0a040-5c5e-4ada-9dcd-438ac0c2fde3">
+        <con:settings/>
+        <con:config>
+          <script>i=100
+log.info i</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="POST student" id="cc41db8e-3c09-4e9c-8c32-258f91ce86cb">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" resourcePath="/api/studentsDetails" methodName="StudentsDetails 2" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="POST student" id="362fbf2e-f66c-4a2a-8e4d-5fd44385c15a" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request>{
+  "first_name": "${#TestCase#First_Name}",
+  "middle_name": "${#TestCase#Middle_Name}",
+  "last_name": "${#TestCase#Last_Name}",
+  "date_of_birth": "Nov 2 1985"
+}</con:request>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="8a0aa7f2-4d7d-4696-8ba0-83aeca7606ce" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>201</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="9d4b7617-9894-4db7-ac2b-a23fa65329b2" name="Contains">
+              <con:configuration>
+                <token>${#TestCase#First_Name}</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="dfc053ac-edaf-4aa8-9049-799752c95400" name="Contains 2">
+              <con:configuration>
+                <token>${#TestCase#Middle_Name}</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="9d184a3d-63b1-4cf7-a964-091e8a5b0529" name="Response SLA" disabled="true">
+              <con:configuration>
+                <SLA>10000000000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Invalid HTTP Status Codes" id="fe047573-a527-4f2e-921a-e6084f88f30f" name="Invalid HTTP Status Codes">
+              <con:configuration>
+                <codes>400</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="HTTP Header Equals" id="c59c6a86-2bb7-469c-b2ef-627450492953" name="HTTP Header Equals">
+              <con:configuration>
+                <Header>Server</Header>
+                <Value>Microsoft-IIS/10.0</Value>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="HTTP Header Exists" id="080d4282-aa78-4289-971b-373510cfa5e2" name="HTTP Header Exists">
+              <con:configuration>
+                <Header>Date</Header>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="MessageContentAssertion" id="77cb4da2-8795-415c-a74e-0cf1fddfda5f" name="Message Content Assertion">
+              <con:configuration xsi:type="con:MessageContentAssertion">
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://thetestingworldapi.com/api/studentsDetails';
+//ns1:Response[1]/ns1:id[1]</con:xpath>
+                  <con:element>id</con:element>
+                  <con:type xsi:nil="true"/>
+                  <con:operator>></con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>100946000</con:expectedValue>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>true</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://thetestingworldapi.com/api/studentsDetails';
+//ns1:Response[1]/ns1:first_name[1]</con:xpath>
+                  <con:element>first_name</con:element>
+                  <con:type xsi:nil="true"/>
+                  <con:operator>=</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Rachel</con:expectedValue>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://thetestingworldapi.com/api/studentsDetails';
+//ns1:Response[1]/ns1:middle_name[1]</con:xpath>
+                  <con:element>middle_name</con:element>
+                  <con:type xsi:nil="true"/>
+                  <con:operator>=</con:operator>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>Joey</con:expectedValue>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://thetestingworldapi.com/api/studentsDetails';
+//ns1:Response[1]/ns1:last_name[1]</con:xpath>
+                  <con:element>last_name</con:element>
+                  <con:type xsi:nil="true"/>
+                  <con:operator>!=</con:operator>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>RossA</con:expectedValue>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:elements>
+                  <con:xpath>declare namespace ns1='https://thetestingworldapi.com/api/studentsDetails';
+//ns1:Response[1]/ns1:date_of_birth[1]</con:xpath>
+                  <con:element>date_of_birth</con:element>
+                  <con:type xsi:nil="true"/>
+                  <con:operator>=</con:operator>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>Nov 2 1985</con:expectedValue>
+                  <con:hasValue>false</con:hasValue>
+                  <con:numberType>false</con:numberType>
+                </con:elements>
+                <con:originalMessage><![CDATA[<Response xmlns="https://thetestingworldapi.com/api/studentsDetails">
+   <id>10094691</id>
+   <first_name>Rachel</first_name>
+   <middle_name>Joey</middle_name>
+   <last_name>Ross</last_name>
+   <date_of_birth>Nov 2 1985</date_of_birth>
+</Response>]]></con:originalMessage>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="transfer" name="PropertyTransfer 1" id="8d96c954-13f3-45b2-b3b2-ece924c9678f">
+        <con:settings/>
+        <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+            <con:name>id</con:name>
+            <con:sourceType>Response</con:sourceType>
+            <con:sourceStep>POST student</con:sourceStep>
+            <con:sourcePath>$['id']</con:sourcePath>
+            <con:targetType>Studentid</con:targetType>
+            <con:targetStep>Common property</con:targetStep>
+            <con:targetPath/>
+            <con:type>JSONPATH</con:type>
+            <con:upgraded>true</con:upgraded>
+          </con:transfers>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="properties" name="Common property" id="72f936f7-67b7-494f-b536-c8cbf63a7f9c">
+        <con:settings/>
+        <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:properties>
+            <con:property>
+              <con:name>Studentid</con:name>
+              <con:value>10094744</con:value>
+            </con:property>
+          </con:properties>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Fetch data" id="167a6026-b67e-4460-aaee-d8387d42c402">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" resourcePath="/api/studentsDetails/{id}" methodName="Id" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Fetch data" id="b0bd9156-da02-4339-b734-67d4d9c3db28" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails/id</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="ac09fce1-9b2a-4edb-95b8-f37ae0daef74" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Sensitive Information Exposure" id="6c93c466-0c25-4721-be40-cf75e81c61e8" name="Sensitive Information Exposure">
+              <con:configuration>
+                <AssertionSpecificExposureList>~(?s).*Runtime (E|e)rror.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*SQLSTATE: [A-Z0-9].*###[Database error messages] Internal database information can be misused by hackers</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*(s|S)tack:.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*(s|S)yntax (e|E)rror\s.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*\w+/\d{1,2}(\.\d{1,3})+.*###[Version x.y.z] Exposing version numbers gives
+            unnecessary hints on your systems vulnerabilities</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*Invalid column name\s.*###[Database error messages] Internal database information can be misused by hackers</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*
+            (ORA|EXP|IMP|KUP|UDE|UDI|DBV|LCD|QSM|OCI|RMAN|LFI|PLS|PLQ|AMD|CLSR|PROC|PROT|TNS|NNC|NLP|NNF|NMP|NCR|NZE|O2F|O2I|O2U|PCB|PCC|SQL|AUD|IMG|VID|DRG|LPX|LSX)-\d{5}\s
+        .*###[Database error messages] Internal database information can be misused by hackers</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*(p|P)owered by:? ([a-zA-Z]+)( [a-zA-Z]+){0,3}( |/)\d\.\d{1,2}\.\d{1,3}.*###[Version x.y.z] Exposing version numbers gives
+            unnecessary hints on your systems vulnerabilities</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*at [\w\$]+(\.[\w\$&lt;>\[\],]+|\.\.ctor)+(\((([\w\$&lt;>\`\[\]]+ [\w\$&lt;>]+, )*(([\w\$&lt;>\`\[\]]+
+            [\w\$&lt;>]+)))\)|\(\))
+        .*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*&lt;\w+:frame\s*class=".*"\s*line=".*"\s*method=".*"\s*/>.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*Traceback \(most recent call last\):.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*((I|i)ncorrect|(I|i)nvalid) (s|S)yntax.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*(s|S)tack ?(t|T)race.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*(e|E)rror was:\s.*###[Database error messages] Internal database information can be misused by hackers</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*(v|V)ersion:? \d\.\d{1,2}\.{1,3}-?.*###[Version x.y.z] Exposing version numbers gives
+            unnecessary hints on your systems vulnerabilities</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*from [\w\$]+(\.[\w\$&lt;>]+)+:\d+:in `.+'.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*Error in process &lt;\d+\.\d+\.\d+> with exit value:.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*STACK\s?TRACE.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*Warning: [\w]+\(\) .+ in .+ on line \d{1,6}.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*((A|a)pache|vBulletin|MySQL|PostgreSQL|phpBB|Internet Information Services)( |/)\d{1,2}(\.\d{1,3})+
+        .*###[Version x.y.z] Exposing version numbers gives
+            unnecessary hints on your systems vulnerabilities</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*at [a-zA-Z][\w\$]*(\.[a-zA-Z][\w\$]*)+\((Unknown Source|Native
+            Method|[a-zA-Z][\w\$]*\.([a-zA-Z]{3,5}):\d+)\)
+        .*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*[^\s]+\.rb:\d+:in `.+'.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*File ".+", line [0-9]{1,6}, in.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <IncludeProjectSpecific>true</IncludeProjectSpecific>
+                <IncludeGlobal>false</IncludeGlobal>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:username/>
+              <con:password/>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="id" value="${Common property#Studentid}"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>id</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="Wait for 10seconds" id="5d6ba93d-83d8-4f0e-b2c5-fbaf37158aa2">
+        <con:settings/>
+        <con:config>
+          <delay>10000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Update DOB" id="10748ace-056d-4c68-a340-b4cdf7cfa563">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" resourcePath="/api/studentsDetails/{id}" methodName="Id 2" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Update DOB" id="56ca59a0-a172-4bc2-b86f-b4982194ae29" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request>{
+  "id":${Common property#Studentid},
+   "first_name": "${#TestSuite#FirstName_TS}",
+  "middle_name": "${#Project#Plevel_Middlename}",
+  "last_name": "${#Global#GlobalLevel_Lastname}",
+  "date_of_birth": "Nov 5 1985"
+}</con:request>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails/id</con:originalUri>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="id" value="${Common property#Studentid}"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>id</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Fetch data after Update" id="3f5c436f-ee0e-4d64-87de-320061664f44">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" resourcePath="/api/studentsDetails/{id}" methodName="Id" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Fetch data after Update" id="b0bd9156-da02-4339-b734-67d4d9c3db28" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails/id</con:originalUri>
+            <con:assertion type="Simple Contains" id="43778ed9-541b-427d-867a-f993393b167b" name="Contains">
+              <con:configuration>
+                <token>Om</token>
+                <ignoreCase>true</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple NotContains" id="117ba269-dd72-45a4-a616-5666ae27231b" name="Not Contains">
+              <con:configuration>
+                <token>Warning</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="a83a50f2-058c-4795-8a49-5168ae3717c9" name="Response SLA">
+              <con:configuration>
+                <SLA>500</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="id" value="${Common property#Studentid}"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>id</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Delete student data" id="2397bedc-422d-4145-b29a-1a427d8efbf7">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" resourcePath="/api/studentsDetails/{id}" methodName="Id 3" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Delete student data" id="b1eabe97-7ea3-436b-96d0-45739af99565" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails/10094515</con:originalUri>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="id" value="${Common property#Studentid}"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>id</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="manualTestStep" name="Restart Server" id="4fadbd32-5fc5-4bba-8b46-80654a9f6be5">
+        <con:description>-Go to Server machin
+-restart the server</con:description>
+        <con:settings/>
+        <con:config xsi:type="con:ManualTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:expectedResult>-Server should restart</con:expectedResult>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Fetch data after delete" id="60841769-7d39-4a3d-9e6f-2fc4512639bb">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" resourcePath="/api/studentsDetails/{id}" methodName="Id" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Fetch data after delete" id="b0bd9156-da02-4339-b734-67d4d9c3db28" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails/id</con:originalUri>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="id" value="${Common property#Studentid}"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>id</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="calltestcase" name="Addstudent" id="871b297f-853e-461b-aed3-75bb3a9f71a0" disabled="true">
+        <con:settings/>
+        <con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:properties/>
+          <con:returnProperties/>
+          <con:runMode>PARALLELL</con:runMode>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="calltestcase" name="Student Flow" id="9df92907-2b74-406c-b1eb-ccb067ae9ea4" disabled="true">
+        <con:settings/>
+        <con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:properties/>
+          <con:returnProperties/>
+          <con:runMode>PARALLELL</con:runMode>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="assertionteststep" name="Validation" id="42d6adf3-1233-4bb9-8c27-0645f1a4dc08">
+        <con:settings/>
+        <con:config xsi:type="con:AssertionTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:entry>
+            <con:id>adeab26a-486f-4dff-8ea2-efcfb501de34</con:id>
+            <con:isGroup>false</con:isGroup>
+            <con:sourceId>cc41db8e-3c09-4e9c-8c32-258f91ce86cb</con:sourceId>
+            <con:propertyName>Response</con:propertyName>
+            <con:assertion type="Response SLA Assertion" name="Response SLA_Fetch" id="55404214-1d33-4c54-91c4-87c8627d6cb6">
+              <con:configuration>
+                <SLA>201</SLA>
+              </con:configuration>
+            </con:assertion>
+          </con:entry>
+          <con:entry>
+            <con:id>0b95b2e6-d899-49ec-b010-27f0213570a5</con:id>
+            <con:isGroup>false</con:isGroup>
+            <con:sourceId>167a6026-b67e-4460-aaee-d8387d42c402</con:sourceId>
+            <con:propertyName>Response</con:propertyName>
+            <con:assertion type="Response SLA Assertion" name="Response SLA 2" id="c99e926f-548e-46ca-bd05-5e94077ea457">
+              <con:configuration>
+                <SLA>400</SLA>
+              </con:configuration>
+            </con:assertion>
+          </con:entry>
+        </con:config>
+      </con:testStep>
+      <con:properties>
+        <con:property>
+          <con:name>First_Name</con:name>
+          <con:value>Rachel</con:value>
+        </con:property>
+        <con:property>
+          <con:name>Middle_Name</con:name>
+          <con:value>Joey</con:value>
+        </con:property>
+        <con:property>
+          <con:name>Last_Name</con:name>
+          <con:value>Ross</con:value>
+        </con:property>
+      </con:properties>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:testCase id="b75e6186-cfda-4fd9-9e36-7614bbed48bd" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Add student Using Run TC step" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:testStep type="calltestcase" name="student flow" id="20e76287-f67e-49c4-822e-4181073a163e">
+        <con:settings/>
+        <con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:targetTestCase>5d6abb28-34c2-41d3-95e0-f1ec646a81de</con:targetTestCase>
+          <con:properties>
+            <con:property>
+              <con:name>First_Name</con:name>
+              <con:value>Dean</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Middle_Name</con:name>
+              <con:value>Jill</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Last_Name</con:name>
+              <con:value>Cass</con:value>
+            </con:property>
+          </con:properties>
+          <con:returnProperties/>
+          <con:runMode>PARALLELL</con:runMode>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Add student again" id="24df7eee-b4c8-41f2-9f4a-b0933e81a2fd">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" methodName="StudentsDetails 2" resourcePath="/api/studentsDetails" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Add student again" id="5012738e-8fe9-4d8b-af5f-a6ca398ae571" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request>{
+  
+  "first_name": "sample string 2",
+  "middle_name": "sample string 3",
+  "last_name": "sample string 4",
+  "date_of_birth": "sample string 5"
+}</con:request>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="d07b374d-e80b-4285-8c26-57fe1c654133" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>201</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" name="Response SLA" id="9f20a4de-a05e-480e-8f51-1269eb1ed64f">
+              <con:configuration>
+                <SLA>100000000000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="fileWaitTestStep" name="check download file" id="4fbc1d70-f7da-4090-abbb-10017226ed78">
+        <con:settings/>
+        <con:config>
+          <FileName>C:\Users\RashmiSandeepDeshmuk\Desktop\Untitled.png</FileName>
+          <Timeout>110</Timeout>
+          <timeout_measure>0</timeout_measure>
+          <DeleteFile>false</DeleteFile>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Get data" id="44559e37-f1a2-48e9-95f2-16da5462326d">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" resourcePath="/api/studentsDetails/{id}" methodName="Id" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Get data" id="b0bd9156-da02-4339-b734-67d4d9c3db28" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails/10094513</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="76c260c9-0155-41c0-9200-c8f229687df0" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="id" value="10094513"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>id</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:testCase id="21e76351-139e-4bce-9f08-23a03037427c" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="File Response Save senario" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:testStep type="restrequest" name="Add student" id="0f451d87-bcc5-42da-b00c-a38736b129a7">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" methodName="StudentsDetails 2" resourcePath="/api/studentsDetails" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Add student" id="70520f8c-290f-446d-8242-facb8211d6f2" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request>{\r
+   "first_name" : "test",\r
+   "middle_name" : "Mulay",\r
+   "last_name" : "s",\r
+   "date_of_birth" : "sample string 5"\r
+}</con:request>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails</con:originalUri>
+            <con:assertion type="JsonPath Match" id="a4fe7347-e64d-439f-a50e-ea687384c2e7" name="JSONPath Match">
+              <con:configuration>
+                <path>$['first_name']</path>
+                <content>"Rash"</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>NTLM</con:addedBasicAuthenticationTypes>
+              <con:addedBasicAuthenticationTypes>SPNEGO/Kerberos</con:addedBasicAuthenticationTypes>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="CreateAndWaitForRemoveFile" name="Save add student response" id="2de52f19-c6d2-488b-8095-bb54aedd836a">
+        <con:settings/>
+        <con:config>
+          <FileName>Addstudentresponse.json</FileName>
+          <FileContent>${Add student#Response}</FileContent>
+          <FolderPath>C:\Users\RashmiSandeepDeshmuk\Desktop\API</FolderPath>
+          <Timeout>0</Timeout>
+          <WaitForFileRemove>false</WaitForFileRemove>
+          <OverwriteExisting>true</OverwriteExisting>
+          <FileEncoding>Unicode</FileEncoding>
+          <Precision>seconds</Precision>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:testCase id="822464c4-b51d-48bb-9eff-85d054addea4" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Dynamic Tc" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:testStep type="datagen" name="DataGenerator" id="3168853a-8172-412f-a020-d455dd3b1d25">
+        <con:settings/>
+        <con:config xsi:type="con:DataGeneratorStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:property type="List">
+            <con:configuration>
+              <value>Testdata1</value>
+              <value>Testdata2</value>
+              <value>Testdata3</value>
+              <random>true</random>
+            </con:configuration>
+            <con:name>FirstNameData</con:name>
+            <con:mode>STEP</con:mode>
+            <con:shared>false</con:shared>
+          </con:property>
+          <con:property type="List">
+            <con:configuration>
+              <value>A</value>
+              <value>B</value>
+              <value>C</value>
+              <value>D</value>
+              <random>true</random>
+            </con:configuration>
+            <con:name>MiddleNamedata</con:name>
+            <con:mode>STEP</con:mode>
+            <con:shared>false</con:shared>
+          </con:property>
+          <con:property type="Number">
+            <con:configuration>
+              <start>1</start>
+              <end>5000</end>
+              <step/>
+              <pattern/>
+              <random>true</random>
+              <persist>false</persist>
+            </con:configuration>
+            <con:name>Random number</con:name>
+            <con:mode>STEP</con:mode>
+            <con:shared>false</con:shared>
+          </con:property>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="ADD" id="3e4d68b7-22cc-4e28-ae87-d64efebd9f63">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" methodName="StudentsDetails 2" resourcePath="/api/studentsDetails" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="ADD" id="c91a5240-bc2c-4f01-a32a-e90b177bafe0" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request>{
+  
+  "first_name": "${DataGenerator#FirstNameData}",
+  "middle_name": "${DataGenerator#MiddleNamedata}",
+  "last_name": "World${DataGenerator#Random number}",
+  "date_of_birth": "sample string 5"
+}</con:request>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="51699010-f9dc-4d55-984a-40dc8be1ca15" name="Valid HTTP Status Codes" disabled="true">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="843a56f6-0d64-44be-809d-27c18139ffe9" name="Response SLA" disabled="true">
+              <con:configuration>
+                <SLA>200</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="transfer" name="Trasfering ID" id="efe65624-64a0-49cc-a472-bb170bcc9c2a">
+        <con:settings/>
+        <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+            <con:name>ID</con:name>
+            <con:sourceType>Response</con:sourceType>
+            <con:sourceStep>ADD</con:sourceStep>
+            <con:sourcePath>$['id']</con:sourcePath>
+            <con:targetType>id</con:targetType>
+            <con:targetStep>Get Data</con:targetStep>
+            <con:targetPath/>
+            <con:type>JSONPATH</con:type>
+            <con:upgraded>true</con:upgraded>
+          </con:transfers>
+          <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+            <con:name>IDUpdate</con:name>
+            <con:sourceType>Response</con:sourceType>
+            <con:sourceStep>ADD</con:sourceStep>
+            <con:sourcePath>$['id']</con:sourcePath>
+            <con:targetType>id</con:targetType>
+            <con:targetStep>Updatestudent</con:targetStep>
+            <con:targetPath/>
+            <con:type>JSONPATH</con:type>
+            <con:targetTransferType>JSONPATH</con:targetTransferType>
+            <con:upgraded>true</con:upgraded>
+          </con:transfers>
+          <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+            <con:name>ID trasfer to Update</con:name>
+            <con:sourceType>Response</con:sourceType>
+            <con:sourceStep>ADD</con:sourceStep>
+            <con:sourcePath>$['id']</con:sourcePath>
+            <con:targetType>Request</con:targetType>
+            <con:targetStep>Updatestudent</con:targetStep>
+            <con:targetPath>$['id']</con:targetPath>
+            <con:type>JSONPATH</con:type>
+            <con:targetTransferType>JSONPATH</con:targetTransferType>
+            <con:upgraded>true</con:upgraded>
+          </con:transfers>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Get Data" id="963fae5e-d789-4ecf-9774-c814c3beaf79">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" methodName="Id" resourcePath="/api/studentsDetails/{id}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Get Data" id="6bc33d09-2933-46d1-a92c-811f65ded839" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails/10094765</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="0f9894ab-8668-4d63-8535-93c8f5160dfa" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="d8d2173f-6bd3-4192-87fb-4b8d1308ea07" name="Response SLA" disabled="true">
+              <con:configuration>
+                <SLA>200</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="id" value="10094990"/>
+            </con:parameters>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Updatestudent" id="1d8ab02f-8014-4b4a-996d-1c26746105fd">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" methodName="Id 2" resourcePath="/api/studentsDetails/{id}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Updatestudent" id="95700949-c76b-400f-88b2-9a9c42acc353" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request>{"id":10094990,"first_name":"sample string 2","middle_name":"sample string 3","last_name":"sample string 4","date_of_birth":"sample string 5"}</con:request>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails/id</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="820dab0d-3bf5-479d-a245-8e0c942d25fe" name="Valid HTTP Status Codes" disabled="true">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="aa640ed3-ddc7-4fc5-aa5b-286dfe480af7" name="Response SLA" disabled="true">
+              <con:configuration>
+                <SLA>200</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="id" value="10094990"/>
+            </con:parameters>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties>
+      <con:property userSpecific="true">
+        <con:name>FirstName_TS</con:name>
+        <con:value>OM</con:value>
+      </con:property>
+    </con:properties>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:testSuite id="3da55a8f-1cdc-47c4-bc48-42a564aca141" name="Request Chaining">
+    <con:settings id="9bae5313-bc15-41f4-9793-f41a867f0b5b"/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="c5c4817a-c1e7-4b32-be6c-7bd3aef62d28" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="TC_1" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:testStep type="datasource" name="Data Source for chaining" id="2efa887c-0173-477d-974a-02e7053553f5">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="File">
+            <con:configuration>
+              <fileName>C:/Users/RashmiSandeepDeshmuk/Desktop/API/Notepaddata1.txt</fileName>
+              <separator>,</separator>
+              <trim>true</trim>
+              <charset>Cp1252</charset>
+              <quotedValues>false</quotedValues>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>Fname</con:property>
+          <con:property>Mname</con:property>
+          <con:property>Lastname</con:property>
+          <con:restartOnRun>true</con:restartOnRun>
+          <con:stopDatasourceExhausted>false</con:stopDatasourceExhausted>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Add data" id="3b8c35fc-3cb4-4476-b1a2-0026d807cfc0">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" methodName="StudentsDetails 2" resourcePath="/api/studentsDetails" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Add data" id="35c240b3-7912-47ea-895b-2bcd65ef765f" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request>{
+  "first_name": "${Data Source for chaining#Fname}",
+  "middle_name": "${Data Source for chaining#Mname}",
+  "last_name": "${Data Source for chaining#Lastname}",
+  "date_of_birth": "sample string 4"
+}</con:request>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="474c1a62-562e-4d5c-bf5c-0995ddc3b42f" name="Valid HTTP Status Codes" disabled="true">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="03975458-1e7b-4f25-b925-2643bc5c92f7" name="Response SLA" disabled="true">
+              <con:configuration>
+                <SLA>200</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>Common Auth</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="transfer" name="PropertyTransfer 1" id="73ed21b3-640f-4643-be44-fea1bc1c7fef">
+        <con:settings/>
+        <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true">
+            <con:name>id</con:name>
+            <con:sourceType>Response</con:sourceType>
+            <con:sourceStep>Add data</con:sourceStep>
+            <con:sourcePath>$['id']</con:sourcePath>
+            <con:targetType>Request</con:targetType>
+            <con:targetStep>Fetch data which is added</con:targetStep>
+            <con:targetPath/>
+            <con:type>JSONPATH</con:type>
+            <con:targetTransferType>JSONPATH</con:targetTransferType>
+            <con:upgraded>true</con:upgraded>
+          </con:transfers>
+          <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+            <con:name>fetch data id value</con:name>
+            <con:sourceType>Response</con:sourceType>
+            <con:sourceStep>Add data</con:sourceStep>
+            <con:sourcePath>$['id']</con:sourcePath>
+            <con:targetType>id</con:targetType>
+            <con:targetStep>Fetch data which is added</con:targetStep>
+            <con:type>JSONPATH</con:type>
+            <con:upgraded>true</con:upgraded>
+          </con:transfers>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Fetch data which is added" id="22ead26f-798c-46d3-9ed0-b9ce7c03c291">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" methodName="Id" resourcePath="/api/studentsDetails/{id}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Fetch data which is added" id="bec526a1-5dbf-4047-bbd7-b4839d3ec603" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request>10095042</con:request>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails/id</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="cbe1a4fb-6812-472e-aa81-bf8669fd61d6" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="d193d90b-7861-42c7-a772-2245a995cd73" name="Response SLA" disabled="true">
+              <con:configuration>
+                <SLA>200</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>Common Auth</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="id" value="10095042"/>
+            </con:parameters>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:testSuite id="5e2481fc-5f8d-4c38-84e6-9c815b272522" name="Dynamic _data">
+    <con:settings id="8a53ba58-30da-496e-b8bb-56f1ef98e0db"/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="8b35f82f-122f-4278-83dd-bbce1bc0a78d" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Dynamic TC_2" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:testStep type="datagen" name="DataGen_TC2" id="4ef280ab-70bb-4dc6-8de0-9f78db60f468">
+        <con:settings/>
+        <con:config xsi:type="con:DataGeneratorStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:property type="List">
+            <con:configuration>
+              <value>Monk</value>
+              <value>Sharona</value>
+              <value>Natali</value>
+              <value>Julie</value>
+              <random>true</random>
+            </con:configuration>
+            <con:name>Firstname</con:name>
+            <con:mode>STEP</con:mode>
+            <con:shared>false</con:shared>
+          </con:property>
+          <con:property type="List">
+            <con:configuration>
+              <value>Dean</value>
+              <value>Sam</value>
+              <value>D</value>
+              <value>Mary</value>
+              <random>true</random>
+            </con:configuration>
+            <con:name>Mname</con:name>
+            <con:mode>STEP</con:mode>
+            <con:shared>false</con:shared>
+          </con:property>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Add data_dynamic Tc2" id="8c6b7215-3ccc-4f40-b597-e626b7f64a37">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" methodName="StudentsDetails 2" resourcePath="/api/studentsDetails" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Add data_dynamic Tc2" id="bc13b790-47ab-4143-bfcf-b6c7f4f49744" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request>{
+  "first_name": "${DataGen_TC2#Firstname}",
+  "middle_name": "${DataGen_TC2#Mname}",
+  "last_name": "sample string 3",
+  "date_of_birth": "sample string 4"
+}</con:request>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="1b50e59c-f240-4fe3-a70d-21cccf766fda" name="Valid HTTP Status Codes" disabled="true">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="8ab05eb7-2bba-4f4d-acf0-31d9f86eb5f1" name="Response SLA" disabled="true">
+              <con:configuration>
+                <SLA>200</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="assertionteststep" name="ValidationAssertions on Dynamic Tc2" id="2954643c-a10e-4a60-8e7d-3fb6d388758c">
+        <con:settings/>
+        <con:config xsi:type="con:AssertionTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:entry>
+            <con:id>8ce7821d-a718-417b-819d-1babee881727</con:id>
+            <con:isGroup>false</con:isGroup>
+            <con:sourceId>8c6b7215-3ccc-4f40-b597-e626b7f64a37</con:sourceId>
+            <con:propertyName>Response</con:propertyName>
+            <con:assertion type="Response SLA Assertion" name="Response SLA" id="c206afa3-7ef9-4ec0-a285-d5b4561bd998">
+              <con:configuration>
+                <SLA>200</SLA>
+              </con:configuration>
+            </con:assertion>
+          </con:entry>
+          <con:entry>
+            <con:id>f6d69169-171a-4294-b10f-cb582680715c</con:id>
+            <con:isGroup>false</con:isGroup>
+            <con:sourceId>8c6b7215-3ccc-4f40-b597-e626b7f64a37</con:sourceId>
+            <con:propertyName>Response</con:propertyName>
+            <con:assertion type="Simple Contains" name="Contains" id="187a9cb1-5b21-49b6-a9e7-1e3137b2968a">
+              <con:configuration>
+                <token>Dean</token>
+                <ignoreCase>true</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+          </con:entry>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:testSuite id="c80e36e2-dded-4887-b886-f2e6f126878c" name="https://thetestingworldapi.com Test Suite 4">
+    <con:settings id="08617a23-953d-4a8e-9e69-2fa1bd893034"/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="f88e830e-d324-48fb-971e-4b929a5b5066" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="https://thetestingworldapi.com Test Case 1" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:testSuite id="aa4a3b4d-e1df-4496-be15-f32e1bf9c6b6" name="Data Driven Testing">
+    <con:settings id="c7bada6f-e765-4028-9565-b41f22f8686e"/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="205fd0f0-8b63-416a-9a14-92b721382e73" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Data driven with Notepad" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:testStep type="datasource" name="FetchdataFromNotepad" id="5cd44f0e-721d-45de-8398-db48ac7777ec">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="File">
+            <con:configuration>
+              <fileName>C:/Users/RashmiSandeepDeshmuk/Desktop/API/Testdata.txt</fileName>
+              <separator>,</separator>
+              <trim>true</trim>
+              <charset>Cp1252</charset>
+              <quotedValues>false</quotedValues>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>Fname</con:property>
+          <con:property>Mname</con:property>
+          <con:property>Lname</con:property>
+          <con:property>DOB</con:property>
+          <con:restartOnRun>true</con:restartOnRun>
+          <con:stopDatasourceExhausted>false</con:stopDatasourceExhausted>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Add Student" id="6bfc5f31-e6c5-4239-a64a-6a5b2b19ef89">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" methodName="StudentsDetails 2" resourcePath="/api/studentsDetails" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Add Student" id="ae8588c1-eecc-4f8f-ac10-e6602e29d8c9" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request>{\r
+   "first_name" : "${FetchdataFromNotepad#Fname}",\r
+   "middle_name" : "${FetchdataFromNotepad#Mname}",\r
+   "last_name" : "${FetchdataFromNotepad#Lname}",\r
+   "date_of_birth" : "${FetchdataFromNotepad#DOB}"\r
+}</con:request>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails</con:originalUri>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="transfer" name="PropertyTransfer 1" id="3318f88c-bad0-4a38-ae59-1cebdc60b65e">
+        <con:settings/>
+        <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true">
+            <con:name>id</con:name>
+            <con:sourceType>Response</con:sourceType>
+            <con:sourceStep>Add Student</con:sourceStep>
+            <con:sourcePath>$['id']</con:sourcePath>
+            <con:targetType>Output</con:targetType>
+            <con:targetStep>Data Sink Notepad</con:targetStep>
+            <con:targetPath/>
+            <con:type>JSONPATH</con:type>
+            <con:upgraded>true</con:upgraded>
+          </con:transfers>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasink" name="Data Sink Notepad" id="b9776da1-9154-4420-b005-4d8bf176008c">
+        <con:settings/>
+        <con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSink type="File">
+            <con:configuration>
+              <fileName>C:/Users/RashmiSandeepDeshmuk/Desktop/API/Studentid.txt</fileName>
+              <separator>,</separator>
+              <escape>"</escape>
+              <quote>true</quote>
+              <trim>true</trim>
+              <append>false</append>
+              <encoding>Cp1252</encoding>
+            </con:configuration>
+          </con:dataSink>
+          <con:properties>
+            <con:property>
+              <con:name>Output</con:name>
+              <con:value>10094811</con:value>
+            </con:property>
+          </con:properties>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="Data Source Loop" id="9a8983ae-f8bc-48b9-a12e-92695cf1c67e">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep>FetchdataFromNotepad</dataSourceStep>
+          <targetStep>Add Student</targetStep>
+          <discardResults>true</discardResults>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:testCase id="40c778c1-397c-4f3b-9b1d-2fad9f9ff7ee" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Datdrivengrid" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:testStep type="datasource" name="FetchdatafromGrid" id="ab5be568-a6eb-4694-be3f-c10c4656c972">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Grid">
+            <con:configuration>
+              <check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Fname1</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Mname1</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Lname1</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1/1/2000</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Fname2</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Mname2</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Lname2</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1/1/2001</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">F3</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">M3</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">L3</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1/1/2002</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">F4</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">M4</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">L4</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1/1/2003</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">F5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">M5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">L5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1/1/2005</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <recognizeAsPlainText>true</recognizeAsPlainText>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>Fname</con:property>
+          <con:property>Mname</con:property>
+          <con:property>Lname</con:property>
+          <con:property>DOB</con:property>
+          <con:restartOnRun>true</con:restartOnRun>
+          <con:stopDatasourceExhausted>false</con:stopDatasourceExhausted>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Add Student" id="4ef0fd28-1cd1-4a90-b53a-3a761d1ca8ad">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" methodName="StudentsDetails 2" resourcePath="/api/studentsDetails" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Add Student" id="ae8588c1-eecc-4f8f-ac10-e6602e29d8c9" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request>{
+  
+  "first_name": "${FetchdatafromGrid#Fname}",
+  "middle_name": "${FetchdatafromGrid#Mname}",
+  "last_name": "${FetchdatafromGrid#Lname}",
+  "date_of_birth": "${FetchdatafromGrid#DOB}"
+}</con:request>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails</con:originalUri>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="Data Source Loop for Grid" id="833d3197-f1fb-49dd-b7c5-90f0145951d3">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep>FetchdatafromGrid</dataSourceStep>
+          <targetStep>Add Student</targetStep>
+          <discardResults>true</discardResults>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:testCase id="2323ef7b-b8f6-4073-aff8-088a2d036aa8" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Datadriven testing from notepad2" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:testStep type="datasource" name="Data SourceNotepad2" id="46dab889-881f-48f8-9e0b-5c6ae204cccb">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="File">
+            <con:configuration>
+              <fileName>C:/Users/RashmiSandeepDeshmuk/Desktop/API/Notepaddata1.txt</fileName>
+              <separator>,</separator>
+              <trim>true</trim>
+              <charset>Cp1252</charset>
+              <quotedValues>false</quotedValues>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>Fname</con:property>
+          <con:property>Mname</con:property>
+          <con:property>Lname</con:property>
+          <con:property>DOB</con:property>
+          <con:restartOnRun>true</con:restartOnRun>
+          <con:stopDatasourceExhausted>false</con:stopDatasourceExhausted>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Add data" id="b8cb62d5-bf1c-4ebf-90dc-c4e288cc9318">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" methodName="StudentsDetails 2" resourcePath="/api/studentsDetails" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Add data" id="c8572348-8fb9-463f-a3dc-387d18d0abbe" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request>{
+  "first_name": "${Data SourceNotepad2#Fname}",
+  "middle_name": "${Data SourceNotepad2#Mname}",
+  "last_name": "${Data SourceNotepad2#Lname}",
+  "date_of_birth": "${Data SourceNotepad2#DOB}"
+}</con:request>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="af5b1e2f-b9b9-4f57-9133-17f4cb190262" name="Valid HTTP Status Codes" disabled="true">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="0508f7ba-1686-4dfd-825b-7a4fbaa3c7ee" name="Response SLA" disabled="true">
+              <con:configuration>
+                <SLA>200</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="transfer" name="PropertyTransfer 1" id="972eba28-70b4-4929-828f-42392b9ee804">
+        <con:settings/>
+        <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true">
+            <con:name>id</con:name>
+            <con:sourceType>Response</con:sourceType>
+            <con:sourceStep>Add data</con:sourceStep>
+            <con:sourcePath>$['id']</con:sourcePath>
+            <con:targetType>Output</con:targetType>
+            <con:targetStep>Data Sink notepad2</con:targetStep>
+            <con:targetPath/>
+            <con:type>JSONPATH</con:type>
+            <con:upgraded>true</con:upgraded>
+          </con:transfers>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasink" name="Data Sink notepad2" id="a9eb9b55-c693-46f1-af36-54937e44ad5c">
+        <con:settings/>
+        <con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSink type="File">
+            <con:configuration>
+              <fileName>C:/Users/RashmiSandeepDeshmuk/Desktop/API/datasinknotepad2.txt</fileName>
+              <separator>,</separator>
+              <escape>"</escape>
+              <quote>true</quote>
+              <trim>true</trim>
+              <append>false</append>
+              <encoding>Cp1252</encoding>
+            </con:configuration>
+          </con:dataSink>
+          <con:properties>
+            <con:property>
+              <con:name>Output</con:name>
+              <con:value>id</con:value>
+            </con:property>
+          </con:properties>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="Data Source Loop from notepad2" id="d35cdaf2-8519-44a2-94e1-26c1549158ae">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep>Data SourceNotepad2</dataSourceStep>
+          <targetStep>Add data</targetStep>
+          <discardResults>true</discardResults>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:requirements/>
+  <con:properties>
+    <con:property userSpecific="true">
+      <con:name>Plevel_Middlename</con:name>
+      <con:value>Jai</con:value>
+    </con:property>
+  </con:properties>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:xmlTemplates/>
+    <con:parameters/>
+  </con:reporting>
+  <con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest">
+    <con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
+// This code is often used for adding custom authentication to ReadyAPI functional tests
+
+// If hardcoding the token, uncomment and change line 5
+// token = '4567'
+
+// If your token is parameterized in Project level custom property, uncomment line 8
+// token = request.parent.testCase.testSuite.project.getProperty('auth_token').getValue()
+
+// To modify all outgoing calls, remove comments from lines 11 to 16
+// headers = request.requestHeaders
+// if (headers.containsKey('auth_token2') == false) {
+//   headers.put('auth_token2', token)
+//   request.requestHeaders = headers
+// }</con:script>
+  </con:eventHandlers>
+  <con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep">
+    <con:script>// Save all test step results into files
+// Change the directory path in line 5 to a location where you want to store details
+// then uncomment lines 5 to 10
+
+// filePath = 'C:\\tempOutputDirectory\\'
+// fos = new java.io.FileOutputStream(filePath + testStepResult.testStep.label + '.txt', true)
+// pw = new java.io.PrintWriter(fos)
+// testStepResult.writeTo(pw)
+// pw.close()
+// fos.close()</con:script>
+  </con:eventHandlers>
+  <con:authRepository>
+    <con:basicAuthEntry>
+      <con:name>Fecth data Oath</con:name>
+      <con:type>Basic</con:type>
+      <con:username>test</con:username>
+      <con:password>123</con:password>
+    </con:basicAuthEntry>
+    <con:basicAuthEntry>
+      <con:name>Common Auth</con:name>
+      <con:type>Basic</con:type>
+      <con:username>test</con:username>
+      <con:password>123</con:password>
+    </con:basicAuthEntry>
+    <con:digestAuthEntry>
+      <con:name>test Digest</con:name>
+      <con:type>Digest</con:type>
+    </con:digestAuthEntry>
+    <con:oAuth20AuthEntry>
+      <con:name>Bearer</con:name>
+      <con:type>OAuth 2.0</con:type>
+      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:oAuth2Flow>JWT_GRANT</con:oAuth2Flow>
+      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
+      <con:jwtConfiguration/>
+      <con:responseType>id_token</con:responseType>
+    </con:oAuth20AuthEntry>
+    <con:awsSignatureAuthEntry>
+      <con:name>admin</con:name>
+      <con:type>AWS Signature</con:type>
+    </con:awsSignatureAuthEntry>
+  </con:authRepository>
+  <con:tags/>
+</con:soapui-project>
